@@ -29,4 +29,4 @@ RUN set -xe \
 
 RUN set -xe \
     && ln -sf /usr/share/zoneinfo/${MANTIS_TIMEZONE} /etc/localtime \
-    && echo 'date.timezone = "${MANTIS_TIMEZONE}"' > /usr/local/etc/php/php.ini
+    && echo date.timezone = \"${MANTIS_TIMEZONE}\" > /usr/local/etc/php/php.ini
